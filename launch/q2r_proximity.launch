@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Use P3D to emulate a nav. sensor with lat/lon of the gazebo origin-->  
+  <node pkg="quat2rpy" type="quat2rpy.py" name="quat2rpy"
+	output="screen">
+     <remap from="pose" to="proximity" />
+  </node>
+</launch>
